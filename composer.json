@@ -23,11 +23,8 @@
       "dont-discover": [
       ],
       "providers": [
-        "driver-chatapi\\Providers\\ChatApiDriverServiceProvider"
-      ],
-      "aliases": {
-        "DriverChatApi": "driver-chatapi\\Facade\\ChatApiDriver"
-      }
+        "ChatApiDriver\\Providers\\ChatApiDriverServiceProvider"
+      ]
     }
   },
   "config": {
