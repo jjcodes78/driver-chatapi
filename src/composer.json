@@ -1,0 +1,38 @@
+{
+  "name": "jjsquady/driver-chatapi",
+  "description": "BotMan ChatApi WhatsApp Driver",
+  "keywords": ["botman", "chatapi", "whatsapp", "driver", "api"],
+  "license": "MIT",
+  "type": "project",
+  "require": {
+    "php": ">=7.0.0"
+  },
+  "autoload": {
+    "classmap": [],
+    "psr-4": {
+      "ChatApiDriver\\": "packages/driver-chatapi/src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "dont-discover": [
+      ],
+      "providers": [
+        "driver-chatapi\\Providers\\ChatApiDriverServiceProvider"
+      ],
+      "aliases": {
+        "DriverChatApi": "driver-chatapi\\Facade\\ChatApiDriver"
+      }
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
