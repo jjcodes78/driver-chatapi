@@ -10,7 +10,7 @@
   "autoload": {
     "classmap": [],
     "psr-4": {
-      "ChatApiDriver\\": "packages/driver-chatapi/src/"
+      "ChatApiDriver\\": "src/"
     }
   },
   "autoload-dev": {
